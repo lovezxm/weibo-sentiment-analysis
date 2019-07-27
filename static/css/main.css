@@ -1,0 +1,152 @@
+.ivu-input {
+    display: inline-block;
+    width: 100%;
+    height: 32px;
+    line-height: 1.5;
+    padding: 4px 7px;
+    font-size: 12px;
+    border: 1px solid #dddee1;
+    border-radius: 4px;
+    color: #495060;
+    background-color: #fff;
+    background-image: none;
+    position: relative;
+    cursor: text;
+    transition: border .2s ease-in-out,background .2s ease-in-out,box-shadow .2s ease-in-out;
+	height: 73px; 
+	min-height: 73px; 
+	max-height: 157px;
+	font-size:16px;
+}
+.ivu-layout-content {
+    flex: auto;
+	padding: 24px 36px; 
+	min-height: 500px; 
+	min-width: 400px; 
+	background: rgb(255, 255, 255);
+}
+
+.button-group {
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+.button {
+    margin-left: 12px;
+}
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+.ivu-btn, .ivu-btn:active, .ivu-btn:focus {
+    outline: 0;
+}
+.ivu-btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    line-height: 1.5;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 6px 15px;
+    font-size: 12px;
+    border-radius: 4px;
+    transition: color .2s linear,background-color .2s linear,border .2s linear,box-shadow .2s linear;
+    color: #495060;
+    background-color: #f7f7f7;
+    border-color: #dddee1;
+}
+.ivu-btn-info {
+    color: #fff;
+    background-color: #2db7f5;
+    border-color: #2db7f5;
+}
+.ivu-btn-info:hover {
+	background-color: #0CF;
+}
+.ivu-btn-success {
+    color: #fff;
+    background-color: #19be6b;
+    border-color: #19be6b;
+}
+.ivu-btn-success:hover {
+	background-color: #3C0;
+}
+
+.loader {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+.result {
+    margin-top: 60px;
+    height: 200px;
+	font-size: 16px;
+}
+#result-word {
+	margin-top: 60px;
+	font-weight: bold;
+	font-size: 18px;
+}
+h1,h3{
+	padding-top:10px;
+}
+h1,h2,h3{
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.instruction {
+    margin-top: 2em;
+	font-size: 16px;
+}
+
+#mainpad {
+	margin:0 auto
+	width: 640px;
+	height: 140px;
+}
+
+
+footer {
+    text-align: center;
+	margin-top: 60px;
+    font-size: 14px;
+}
+#mid-up-title {
+	flex: 0 0 auto;
+    margin: 0px 0 40px;
+    text-align: center;
+    font-size: 30px;
+    color: #000;
+    padding: 0 50px;
+    height: 64px;
+    line-height: 64px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+

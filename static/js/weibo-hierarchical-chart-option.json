@@ -1,0 +1,118 @@
+{
+    tooltip: {
+        trigger: "item",
+        formatter: "{b} : {d}%"
+    },
+    toolbox: {
+        feature: {
+            mark: {
+                show: true
+            },
+            dataView: {
+                show: true,
+                readOnly: true
+            },
+            restore: {
+                show: true
+            },
+            saveAsImage: {
+                show: true
+            }
+        },
+        show: false
+    },
+    calculable: false,
+    series: [
+        {
+            name: "细粒度分类",
+            type: "pie",
+            selectedMode: "single",
+            radius: [0, 80],
+            itemStyle: {
+                normal: {
+                    labelLine: {
+                        show: false
+                    },
+                    label: {
+                        position: "inside"
+                    }
+                }
+            },
+            data: [
+                {
+                    value: 0,
+                    name: "害怕"
+                },
+                {
+                    value: 0,
+                    name: "生气"
+                },
+                {
+                    value: 0,
+                    name: "伤心"
+                },
+                {
+                    value: 0,
+                    name: "厌恶"
+                },
+                {
+                    value: 0,
+                    name: "吃惊"
+                }
+            ]
+        },
+        {
+            name: "情感倾向性分类",
+            type: "pie",
+            radius: [100, 140],
+            data: [
+                {
+                    value: 0,
+                    name: "消极"
+                },
+                {
+                    value: 0,
+                    name: "积极"
+                }
+            ],
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true,
+                        position: "inside"
+                    },
+                    labelLine: {
+                        show: false
+                    }
+                }
+            }
+        },
+        {
+            type: "pie",
+            name: "主客观情感分类",
+            data: [
+                {
+                    value: 0,
+                    name: "客观"
+                },
+                {
+                    value: 0,
+                    name: "主观"
+                }
+            ],
+            radius: [160, 210],
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true,
+                        position: "inside"
+                    },
+                    labelLine: {
+                        show: false
+                    }
+                }
+            }
+        }
+    ],
+    color: ["#ff7f50", "#87cefa", "#da70d6", "#32cd32", "#6495ed", "#ff69b4", "#ba55d3", "#cd5c5c", "#ffa500", "#40e0d0", "#1e90ff", "#ff6347", "#7b68ee", "#00fa9a", "#ffd700", "#6699FF", "#ff6666", "#3cb371", "#b8860b", "#30e0e0"]
+}
